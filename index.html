@@ -1,0 +1,27 @@
+<Html>
+    <head>
+        <title> FIREWORKS </title>
+
+        <script src = "https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src = "https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+    </head>
+    <body>
+         <a-scene>
+            <a-entity spe-particles="
+            color:pink,white,gold;
+            maxAge: 2; 
+            distribution:sphere;
+            maxAgeSpread: 5; 
+            particle-count: 200; 
+            radius:1;
+            velocity-spread: 10;
+            randomize-velocity:true;
+            active-multiplier:1000;
+
+            
+            randomizePosition: true">
+            <a-sky color = "black"></a-sky>
+            <a-camera position = "0 0 30"></a-camera>
+         </a-scene>
+    </body>
+</Html>
